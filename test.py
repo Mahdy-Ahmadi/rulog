@@ -5,7 +5,7 @@ client = Client()
 phone = input("📱 Phone (Help: 98918467....): ").strip()
 
 try:
-    response = client.sendCode("android", phone, send_type=True)
+    response = client.sendCode("android", phone)
     code_hash = response['data']['phone_code_hash']
 except Exception:exit()
 
